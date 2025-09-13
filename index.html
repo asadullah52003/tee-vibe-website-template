@@ -23,6 +23,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -46,7 +49,8 @@
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="shop">
-                    <i class='bx bx-store'></i>
+                    <i class='bx bx-store' onclick="displayCart()"></i>
+                    <div id="cart-items"></div>
                 </div>
             </div>
         </nav>
@@ -69,7 +73,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="latest-products">
         <h2>Latest Product</h2>
         <div class="items">
@@ -87,15 +91,17 @@
                         <i class='bx bxs-star-half'></i>
                         <span class="rating">4.3</span>
                     </div>
-                    <div class="price">
-                        <p class="old-price line-through">$110</p>
-                        <span class="new-price">$99.99</span>
-                        <span class="price-discount">-10%</span>
-                    </div>
-                    <div class="product-btn">
-                        <button class="buy-now">Buy Now</button>
-                        <i class='add-to-cart bx bx-cart'></i>
-                        <i class='favorite bx bx-heart'></i>
+                    <div class="product">
+                        <div class="price">
+                            <p class="old-price line-through">$110</p>
+                            <span class="new-price">$99.99</span>
+                            <span class="price-discount">-10%</span>
+                        </div>
+                        <div class="product-btn">
+                            <button class="buy-now" onclick="addToCart(this)">Add to Cart</button>
+                            <i class='add-to-cart bx bx-cart'></i>
+                            <i class='favorite bx bx-heart'></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,7 +125,7 @@
                         <span class="price-discount">-10%</span>
                     </div>
                     <div class="product-btn">
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now" onclick="addToCart(this)">Add to Cart</button>
                         <i class='add-to-cart bx bx-cart'></i>
                         <i class='favorite bx bx-heart'></i>
                     </div>
@@ -145,7 +151,7 @@
                         <span class="price-discount">-10%</span>
                     </div>
                     <div class="product-btn">
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now" onclick="addToCart(this)">Add to Cart</button>
                         <i class='add-to-cart bx bx-cart'></i>
                         <i class='favorite bx bx-heart'></i>
                     </div>
@@ -162,7 +168,7 @@
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star-half'></i>
-                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star'></i>
                         <span class="rating">4.2</span>
                     </div>
                     <div class="price">
@@ -171,7 +177,7 @@
                         <span class="price-discount">-10%</span>
                     </div>
                     <div class="product-btn">
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now" onclick="addToCart(this)">Add to Cart</button>
                         <i class='add-to-cart bx bx-cart'></i>
                         <i class='favorite bx bx-heart'></i>
                     </div>
@@ -197,7 +203,7 @@
                         <span class="price-discount">-10%</span>
                     </div>
                     <div class="product-btn">
-                        <button class="buy-now">Buy Now</button>
+                        <button class="buy-now" onclick="addToCart(this)">Add to Cart</button>
                         <i class='add-to-cart bx bx-cart'></i>
                         <i class='favorite bx bx-heart'></i>
                     </div>
