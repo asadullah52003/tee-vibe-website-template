@@ -52,8 +52,10 @@ function addToCart(button) {
 function displayCart() {
     let cartDiv = document.getElementById("cart-items");
     cartDiv.innerHTML = "";
-
+    cartDiv.style.display = "block";
     cart.forEach(item => {
         cartDiv.innerHTML += `<p>${item.name} - ${item.price}</p>`;
     });
 }
+
+
